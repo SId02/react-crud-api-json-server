@@ -22,7 +22,6 @@ const Home = () => {
   return (
     <div className="container">
       <div className="py-4">
-        <h1>Home Page</h1>
         <table class="table border shadow">
           <thead class="thead-dark">
             <tr>

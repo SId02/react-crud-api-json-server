@@ -1,6 +1,6 @@
 import React from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+import "../node_modules/bulma/css/bulma.css";
+
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
