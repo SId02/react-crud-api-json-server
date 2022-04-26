@@ -23,64 +23,83 @@ const AddUser = () => {
     history.push("/");
   };
   return (
-    <div className="container">
-      <div className="w-75 mx-auto shadow p-5">
-        <h2 className="text-center mb-4">Add A User</h2>
-        <form onSubmit={e => onSubmit(e)}>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Name"
-              name="name"
-              value={name}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Username"
-              name="username"
-              value={username}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              className="form-control form-control-lg"
-              placeholder="Enter Your E-mail Address"
-              name="email"
-              value={email}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Phone Number"
-              name="phone"
-              value={phone}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Enter Your Website Name"
-              name="website"
-              value={website}
-              onChange={e => onInputChange(e)}
-            />
-          </div>
-          <button className="btn btn-primary btn-block">Add User</button>
-        </form>
-      </div>
+    <>
+    <div className="container pt-6">
+    <div className="columns is-desktop is-centered">
+        <div className="column is-half">
+        <h1 className="is-centered">Add A User</h1>
+        <div className="container">
+            <form className="box" onSubmit={e => onSubmit(e)}>
+                <div className="field">
+                  <label className="label">Name</label>
+                  <div className="control">
+                  <input className="input"
+                    type="text"
+                    placeholder="Enter Your Name"
+                    name="name"
+                    value={ name }
+                     onChange={e => onInputChange(e)}
+                  
+                  />
+                  </div>
+                </div>
+              
+                <div className="field">
+                  <label className="label">UserName</label>
+                  <div className="control">
+                  <input className="input"
+                    type="text"
+                    placeholder="Enter your username"
+                          
+                    value={ username }
+                    name="username" 
+                     onChange={e => onInputChange(e)}
+                  />
+                  </div>
+                </div>
+                <div className="field">
+                    <label className="label">Email</label>
+                    <div className="control">
+                  <input className="input" type="email" placeholder="Enter your email address"
+                    value={ email }
+                    name="email"
+                   onChange={e => onInputChange(e)}
+                  />
+                    </div>
+                  </div>
+                  <div className="field">
+                    <label className="label">Phone</label>
+                    <div className="control">
+                  <input className="input" type="text" placeholder="Enter phone number"
+                   name="phone"
+                   value={phone}
+                   onChange={e => onInputChange(e)}
+                  />
+                    </div>
+                  </div>
+                  <div className="field">
+                    <label className="label">Website</label>
+                    <div className="control">
+                  <input className="input" type="text" 
+                     placeholder="Enter Your Website URL"
+                     name="website"
+                     value={website}
+                     onChange={e => onInputChange(e)}
+                  />
+                    </div>
+                  </div>
+              
+              <button className="button is-primary">Add User</button>
+              </form>
+        </div>
     </div>
+  </div>
+      
+      </div>
+      
+
+      
+    </>
   );
 };
 

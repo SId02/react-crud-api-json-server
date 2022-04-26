@@ -1,3 +1,37 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "werwer",
+      "username": "wer",
+      "email": "wer@a.gfh",
+      "phone": "1234567800",
+      "website": "wer.tyryrty.ghj",
+      "id": 1
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "website": "",
+      "id": 2
+    },
+    {
+      "name": "asdasd",
+      "username": "asd",
+      "email": "asd@asd.rtetr",
+      "phone": "asd",
+      "website": "asdas",
+      "id": 3
+    },
+    {
+      "name": "asdasd",
+      "username": "sdfgsdf",
+      "email": "adsdasd@sf.asd",
+      "phone": "9874561202",
+      "website": "asd.asd.asdas",
+      "userName": "3",
+      "id": 4
+    }
+  ]
 }
